@@ -1,0 +1,49 @@
+body {
+    background-color: #eeeeee;
+}
+
+#wrapper, #menu {
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+#menu {
+    padding-top: 1% !important;
+    width: 20%;
+    position: fixed;
+}
+
+.nav-link {
+    background-color: #56CCF2;
+    margin: 1%;
+    border: 0px;
+    width: -webkit-fill-available;
+    text-align: left;
+    color: white;
+}
+
+.content {
+    margin-left: 21%;
+    margin-right: 2%;
+    padding-top: 1% !important;
+}
+
+.card-body {
+    padding-top: 1.25em !important;
+    padding-bottom: 1.25em !important;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card-title {
+    padding-left: 0.60em;
+}
+
+.table > thead {
+    background-color: #e0e0e0;
+}
+
+.btEditar, .btExcluir {
+    margin: 0.10em;
+    width: -webkit-fill-available;
+}
