@@ -1,0 +1,63 @@
+.card-cidade{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 7px;
+    width: 100%;
+}
+
+.card-uf {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 7px;
+    width: 40%;
+}
+
+
+.card-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-fieldset {
+    padding: 5px 7px;
+    flex: 1 1 270px;
+}
+
+.card-fieldset-cidade {
+    display: flex;
+    flex: 1 1 270px;
+    padding: 5px 0;
+}
+
+
+.card-label {
+    display: block;
+    font-size: 13px;
+    padding-bottom: 7px;
+    color:lightslategray;
+}
+
+.card-input {
+    border: 2px solid lightgray; 
+    border-radius: 4px;
+    height: 30px;
+    width: 100%;
+}
+
+.card-bottom {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: flex-end;
+    padding: 0 7px;
+}
+.card-button {
+    align-items: center;
+    background-color: #27ae60;
+    border: #27ae60;
+    border-radius: 4px;
+    color:white;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 25px;
+    padding: 8px 40px;
+}

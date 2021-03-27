@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste frontend | Isaias</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="center">
+            <a class="logo" href="file:///C:/Users/isaia/Desktop/Faculdade/Projetos/HTML-CSS-JS/Programa-Estagio-Front-End/index.html">
+                <img src="imagem/eficaz_logo_black.png" alt="Logo Eficaz" />
+            </a>
+        </div>
+    </header>
+    <section>
+        <div class="center section-center">
+            <aside class="section-aside">
+                <nav class="nav">
+                    <ul class>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="cadastro.html">
+                                <img class="nav-img" src="imagem/signup.png" alt="Cadastro" />
+                                Cadastro
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listacadastro.html">
+                                <img class="nav-img" src="imagem/list.png" alt="Lista de cadastro" />
+                                Lista de cadastrados
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="list">           
+                <h1 class="list-title">Lista de Cadastrados</h1>
+                <div class="list-content">
+                    <div class="list-columns">
+                        <table class="list-table">
+                            <thead>
+                                <tr class="list-itens">
+                                    <th class="list-th list-name">Nome</th>
+                                    <th class="list-th list-email">E-mail</th>
+                                    <th class="list-th list-address">Endereço Completo</th>
+                                    <th class="list-th list-tel">Telefone</th>
+                                    <th class="list-th list-action">Ação</th>
+                                </tr>
+                            </thead>
+                            <tbody class="list-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>      
+    <script type="application/javascript" src="js/jquery-3.0.0.min.js"> </script>
+    <script type="application/javascript">
+        $(document).ready(function(){
+            function buscaUsuariosCadastrados(){
+                $.ajax({
+                    url: "https://estagio.eficazmarketing.com/api/user",
+                    type: "GET",
+                    data: []
+                }).done(function(result) {
+                    $.each(result, function(index, usuario){
+                        let idusuario = usuario.id;
+    
+                        let tr = '<tr id="usuario_' + idusuario + '" class="list-tr">';
+                        
+                        tr += '<td class="list-td">' + usuario.nome + '</td>';
+                        tr += '<td class="list-td">' + usuario.email + '</td>';
+                        tr += '<td class="list-td">' + usuario.rua + ', ' + usuario.numero +'<br/>'+ usuario.bairro + '<br/>' + usuario.cep + '<br/>' + usuario.cidade +'-' + usuario.uf + '</td>';
+                        tr += '<td class="list-td">' + usuario.telefone + '</td>';
+    
+                        tr += '<td class="list-buttons list-td" >';
+    
+                        tr += '<button type="button" class="list-button button-alterar" id="btAlterar' + idusuario + '">Alterar</button><br/>';
+                        tr += '<button type="button" class="list-button button-excluir" id="btExcluir_' + idusuario + '">Excluir</button>';
+    
+                        tr += '</td>';
+                        tr += '</tr>';
+    
+                        $(".list-table > tbody").append(tr);
+    
+                    });
+                });
+            }
+    
+            buscaUsuariosCadastrados();
+        });
+    </script>
+</body>
+    
+    </html>

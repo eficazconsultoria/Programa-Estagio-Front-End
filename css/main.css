@@ -1,0 +1,18 @@
+.card {
+    background-color: white;
+    border: 2px solid #d5d6d7;
+    border-radius: 6px;
+    flex: 1 1 auto;
+    padding: 25px 40px 40px;
+}
+
+.card-title {
+    align-content: center;
+    color: #009edd;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}

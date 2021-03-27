@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e9eef0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 20px 15px;
+}
+
+.section-center {
+    display: flex;
+    align-items: stretch;
+    padding: 0 15px;
+}
+
+.section-aside {
+    margin-right: 20px;
+    flex: 0 0 auto;
+}
