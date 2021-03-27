@@ -7,6 +7,7 @@
 }
 
 .card-title {
+    align-content: center;
     color: #009edd;
     display: block;
     font-size: 25px;

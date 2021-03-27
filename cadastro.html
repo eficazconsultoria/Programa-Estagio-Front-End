@@ -44,7 +44,7 @@
             </aside>
             <main class="card">           
                 <h1 class="card-title">Cadastro</h1>
-                <form class="card-form">
+                <form class="card-form" method="POST">
                     <fieldset class="card-email-p card-fieldset">
                         <label for="email-pessoal" class="card-label">E-mail pessoal do candidato</label>
                         <input id="email-pessoal" type="email" name="email-pessoal" value="" class="card-input" required />
@@ -81,7 +81,7 @@
                         <label for="cep" class="card-label">CEP</label>
                         <input id="cep" type="text" name="cep" value="" class="card-input" required/>
                     </fieldset>
-                    <fieldset class="card-fieldset-cidade">
+                    <fieldset class="card-fieldset card-fieldset-cidade">
                         <div class="card-cidade">
                             <label for="cidade" class="card-label">Cidade</label>
                             <input id="cidade" type="text" name="cidade" value="" class="card-input" required/>
@@ -98,7 +98,7 @@
             </main>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="js/jquery-3.0.0.min.js"> </script>
     <script src="js/index.js" type="text/javascript"></script>
 </body>
 

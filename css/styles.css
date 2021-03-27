@@ -23,3 +23,8 @@ body{
     align-items: stretch;
     padding: 0 15px;
 }
+
+.section-aside {
+    margin-right: 20px;
+    flex: 0 0 auto;
+}

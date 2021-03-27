@@ -1,22 +1,17 @@
 .card-cidade{
     display: flex;
     flex-wrap: wrap;
-    padding:0 7px;
+    padding: 0 7px;
     width: 100%;
 }
 
-.card-uf{
-    display:flex ;
+.card-uf {
+    display: flex;
     flex-wrap: wrap;
     padding: 0 7px;
     width: 40%;
+}
 
-    
-}
-.card-fieldset-cidade{
-    display: flex;
-    flex: 1 1 270px;
-}
 
 .card-form {
     display: flex;
@@ -28,6 +23,12 @@
     flex: 1 1 270px;
 }
 
+.card-fieldset-cidade {
+    display: flex;
+    flex: 1 1 270px;
+    padding: 5px 0;
+}
+
 
 .card-label {
     display: block;
@@ -37,16 +38,17 @@
 }
 
 .card-input {
+    border: 2px solid lightgray; 
     border-radius: 4px;
-    width: 100%;
     height: 30px;
-    Border: 2px solid lightgray; 
+    width: 100%;
 }
 
 .card-bottom {
-    flex: 0 0 100%;
     display: flex;
+    flex: 0 0 100%;
     justify-content: flex-end;
+    padding: 0 7px;
 }
 .card-button {
     align-items: center;
